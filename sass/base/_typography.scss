@@ -1,0 +1,52 @@
+// Headings
+.heading {
+
+  &__main {
+    font-weight: 400;
+    font-size: 9rem;
+  }
+
+  &__sub {
+    margin-bottom: 2.5rem;
+    padding: .4rem 1rem;
+    background: rgba(lighten($primary-color, 5), 0.5);
+  }
+}
+
+// Links
+a {
+  color: #fff;
+  text-decoration: none;
+}
+//Span
+.text__secondary {
+  color: $secondary-color;
+}
+
+.heading {
+  padding: 4.5rem;
+  height: 100vh;
+
+  .icons {
+    margin-top: 1.5rem;
+    cursor: pointer;
+  }
+
+  i {
+    padding: 1rem;
+
+    &:hover {
+      color: $secondary-color;
+      @include easeOut;
+    }
+  }
+
+  &#home {
+    // NO SCROLL
+    overflow: hidden;
+  }
+
+  &__main {
+    margin-top: 20vh;
+  }
+}

@@ -1,16 +1,22 @@
 *,
 *::after,
 *::before {
-  padding: 0;
+  // padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
 html {
-font-size: 10px;
+  font-size: 10px;
 }
 
 body {
   background: $primary-color;
   color: #fff;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  // Recommended height
+  line-height: 1.6;
+  font-size: 1.6rem;
+  @include background;
 }

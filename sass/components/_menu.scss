@@ -1,0 +1,51 @@
+// menu buttons
+.header__menu {
+  position: absolute;
+  z-index: 3;
+  right: 3.5rem;
+  top: 3.5rem;
+  cursor: pointer;
+  @include easeOut;
+
+  &--line {
+    width: 2.8rem;
+    height: .3rem;
+    margin: 0 0 1rem 0;
+    background: #fff;
+    @include easeOut;
+
+    &:nth-child(2) {
+      width: 2rem;
+      margin: 0 auto 1rem;
+    }
+  }
+
+  // Closing class
+  &.close {
+    transform: rotate(180deg);
+
+    .header__menu--line {
+      @include easeOut;
+      background: $secondary-color;
+      // Line 1
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(1rem, 1rem);
+      }
+      // Line 2
+      &:nth-child(2) {
+        visibility: hidden;
+        opacity: 0;
+      }
+      // Line 3
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(.8rem,-.8rem);
+      }
+    }
+
+  }
+
+  &:hover :nth-child(2) {
+    width: 2.8rem;
+
+  }
+}
