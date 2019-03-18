@@ -1,0 +1,48 @@
+// Wide screens
+@include xlScreen {
+
+}
+
+// Desktop and laptops
+@include largeScreen {
+
+}
+
+// Tablet
+@include mediumScreen {
+  main {
+    align-items: center;
+    text-align: center;
+
+    .heading__main {
+      line-height: 1;
+      margin-bottom: 2rem;
+    }
+   }
+    ul.nav__menu,
+    div.nav__brand {
+      width: 100%;
+      min-height: 0;
+      float: none;
+
+      &.show {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+    .nav__menu {
+      height: 65vh;
+      transform: translate3d(-100%, 0, 0);
+      
+    }
+    .nav__brand {
+      height: 35vh;
+      transform: translate3d(100%, 0, 0);
+    }
+}
+
+// Phones
+@include smallScreen {
+  main#home h1 {
+    margin-top: 11vh;
+  }
+}
