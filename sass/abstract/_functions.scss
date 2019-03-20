@@ -1,0 +1,9 @@
+// Function to make the color fit based on the bg color
+
+@function setTextColor($BGcolor){
+  @if (lightness($BGcolor) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}

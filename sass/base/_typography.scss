@@ -25,7 +25,8 @@ a {
 
 .heading {
   padding: 4.5rem;
-  height: 100vh;
+  // Creating footer sticking in the bottom
+  min-height: calc(100vh - $footer-height);
 
   .icons {
     margin-top: 1.5rem;

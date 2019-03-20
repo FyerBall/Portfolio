@@ -1,0 +1,7 @@
+#footer {
+  text-align: center;
+  background: darken($primary-color, 10);
+  padding: 1rem;
+  color: setTextColor($primary-color);
+  height: $footer-height;
+}

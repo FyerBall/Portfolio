@@ -1,0 +1,16 @@
+.about{
+  text-align: center;
+    padding: 2rem;
+  &__bio--image {
+    width: 20rem;
+    height: 20rem;
+    border: .5rem solid $secondary-color;
+    border-radius: 50%;
+  }
+
+  &__projects {
+    background: lighten($primary-color, 3);
+    padding: .7rem;
+    border-bottom: .5rem solid $secondary-color;
+  }
+}

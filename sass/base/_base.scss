@@ -12,7 +12,7 @@ html {
 
 body {
   background: $primary-color;
-  color: #fff;
+  color: setTextColor($primary-color);
   height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   // Recommended height

@@ -1,5 +1,7 @@
-@import "abstract/variables";
+@import "abstract/functions";
 @import "abstract/mixins";
+@import "abstract/variables";
+
 
 @import "base/animation";
 @import "base/base";
@@ -12,6 +14,10 @@
 @import "layout/footer";
 @import "layout/grid";
 @import "layout/header";
-@import "layout/mobile";
+
 
 @import "pages/home";
+
+
+// Media Query
+@import "layout/mobile";
