@@ -1,0 +1,42 @@
+.composition {
+  position: relative;
+
+  &__photo {
+    width: 55%;
+    border-radius: 1rem;
+    box-shadow: 0 1.5rem 4rem rgba($dark-shadow, .4);
+    position: absolute;
+    z-index: 1;
+    transition: all .3s;
+    cursor: pointer;
+    // outline-offset: 1rem;
+
+    &--photo1 {
+      left: 0;
+      top: -2rem;
+    }
+
+    &--photo2 {
+      right: 0;
+      top: 2rem;
+    }
+
+    &--photo3 {
+      left: 2rem;
+      top: 10rem;
+    }
+
+    &:hover {
+      // Outline acts like a border put we can add padding to it
+      // outline: 1.5rem solid $primary-color;
+      transform: scale(1.05) translateY(- 5rem);
+      box-shadow: 0 2.5rem 4rem rgba($dark-shadow, .8);
+      // Overlape
+      z-index: 2;
+    }
+  }
+
+  &:hover &__photo:not(:hover) {
+    transform: scale(.7);
+  }
+}

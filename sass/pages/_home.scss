@@ -1,3 +1,6 @@
+#about {
+    background: lighten($primary-color, 5);
+}
 .about{
   text-align: center;
     padding: 2rem;
@@ -6,11 +9,24 @@
     height: 20rem;
     border: .5rem solid $secondary-color;
     border-radius: 50%;
+    }
+    &__header {
+    font-size: 10rem;
   }
 
   &__projects {
     background: lighten($primary-color, 3);
     padding: .7rem;
     border-bottom: .5rem solid $secondary-color;
+
+    &--folder {
+      cursor: pointer;
+      &:hover {
+        @include easeOut;
+        transform: translateY(-0.3rem) scale(1.03);
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+      }
+    }
   }
+
 }

@@ -10,7 +10,7 @@
 
 // Tablet
 @include mediumScreen {
-  main {
+  #home {
     align-items: center;
     text-align: center;
     .heading__main {
@@ -41,7 +41,7 @@
 
 // Phones
 @include smallScreen {
-  main#home h1 {
+  #home h1 {
     margin-top: 11vh;
   }
 }

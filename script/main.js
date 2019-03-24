@@ -3,6 +3,7 @@ const nav = document.querySelector(".nav");
 const branding = document.querySelector(".nav__brand");
 const navMenu = document.querySelector(".nav__menu");
 const navItem = document.querySelectorAll(".nav__item");
+const navLink = document.querySelector(".nav__link");
 
 // Menu status
 let showMenu = false;

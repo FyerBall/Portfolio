@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei');
+
+body {
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+
 // Headings
-.heading {
+.header {
 
   &__main {
     font-weight: 400;
@@ -23,10 +29,11 @@ a {
   color: $secondary-color;
 }
 
-.heading {
+.header__box {
   padding: 4.5rem;
   // Creating footer sticking in the bottom
   min-height: calc(100vh - $footer-height);
+  text-align: center;
 
   .icons {
     margin-top: 1.5rem;
@@ -42,12 +49,7 @@ a {
     }
   }
 
-  &#home {
-    // NO SCROLL
-    overflow: hidden;
-  }
-
-  &__main {
+  .header__main {
     margin-top: 20vh;
   }
 }

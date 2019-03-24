@@ -1,4 +1,81 @@
-//  block
-// Hover
-// background sec color
-// color SetColor func $sec-color
+@import url('https://fonts.googleapis.com/css?family=Margarine');
+
+.btn--light {
+  border: lighten($secondary-color, 5) 1px solid;
+  background: darken($secondary-color, 5);
+  color: setTextColor($primary-color) !important;
+  font-weight: 100;
+  padding: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  border-radius: 6px;
+  display: block;
+  margin-bottom: 1rem;
+  font-family: 'Margarine', cursive;
+
+
+  &:hover {
+    background: $primary-color;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    @include easeOut;
+}
+}
+
+.btn--dark {
+  border: $secondary-color 1px solid;
+  background: darken($primary-color, 5);
+  color: setTextColor($primary-color);
+  font-weight: 100;
+  padding: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  border-radius: 6px;
+  display: block;
+  font-family: 'Margarine', cursive;
+
+
+
+  &:hover {
+    background: $secondary-color;
+    color: setTextColor($primary-color);
+    border: lighten($primary-color, 5) 2px solid;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    @include easeOut;
+  }
+
+}
+
+.btn--primary {
+  text-decoration: none;
+  text-transform: uppercase;
+  background: $primary-color;
+  color: setTextColor($primary-color);
+  padding: 1.3rem 3rem;
+  display: inline-block;
+  border-radius: 50rem;
+  transition: all .3s;
+  cursor: pointer;
+  border: 0;
+  font-family: inherit;
+  position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 8rem;
+
+
+  &:hover {
+  box-shadow: 0 1rem 2rem rgba(#000, 0.7);
+  }
+
+  &:active,
+  &:focus {
+  outline: none;
+  box-shadow: 0 1rem 1rem rgba(#000, 0.7);
+  }
+}
