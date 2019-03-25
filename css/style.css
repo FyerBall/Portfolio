@@ -336,6 +336,8 @@ a {
         transition: all .5s ease-out;
         transform: translateY(-0.3rem) scale(1.03);
         box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .about__projects--image {
+      width: 16rem; }
 
 @media screen and (max-width: 768px) {
   #home {
