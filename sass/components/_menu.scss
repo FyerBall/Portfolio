@@ -59,6 +59,8 @@
 .nav {
   height: 10vh;
   background: $secondary-color;
+  position: fixed;
+  width: 100%;
 
   // show class -> will be add from DOM (main.js)
   &.show {
