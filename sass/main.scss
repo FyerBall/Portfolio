@@ -2,7 +2,6 @@
 @import "abstract/mixins";
 @import "abstract/variables";
 
-
 @import "base/animation";
 @import "base/base";
 @import "base/typography";
@@ -10,14 +9,13 @@
 
 @import "components/buttons";
 @import "components/menu";
+@import "components/preloader";
 
 @import "layout/footer";
 @import "layout/grid";
 @import "layout/header";
 
-
 @import "pages/home";
-
 
 // Media Query
 @import "layout/mobile";

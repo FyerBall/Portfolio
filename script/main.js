@@ -5,6 +5,12 @@ const navMenu = document.querySelector(".nav__menu");
 const navItem = document.querySelectorAll(".nav__item");
 const navLink = document.querySelector(".nav__link");
 
+// Get rid of the preload screen when the page is ready
+window.addEventListener("load", () => {
+  const preload = document.querySelector(".preload");
+  preload.classList.add("loaded");
+});
+
 // Menu status
 let showMenu = false;
 

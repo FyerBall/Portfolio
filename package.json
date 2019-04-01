@@ -1,7 +1,6 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass sass/main.scss css/style.css -w"
@@ -10,5 +9,14 @@
   "license": "ISC",
   "dependencies": {
     "node-sass": "^4.11.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FyerBall/Portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FyerBall/Portfolio/issues"
+  },
+  "homepage": "https://github.com/FyerBall/Portfolio#readme",
+  "description": ""
 }
